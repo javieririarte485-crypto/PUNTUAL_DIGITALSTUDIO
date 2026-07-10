@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PUNTUAL | Diseño Web y SEO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#e5e2df",
+                      "on-tertiary": "#ffffff",
+                      "primary-container": "#a26551",
+                      "surface-container": "#ffe9e2",
+                      "on-secondary-fixed": "#1c1b1a",
+                      "primary": "#854d3b",
+                      "surface-bright": "#fff8f6",
+                      "on-surface-variant": "#52433f",
+                      "on-secondary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#c9c6c3",
+                      "inverse-surface": "#3c2d27",
+                      "secondary": "#605e5c",
+                      "surface-dim": "#eed5cc",
+                      "on-secondary-fixed-variant": "#484745",
+                      "surface": "#fff8f6",
+                      "on-tertiary-fixed": "#241a0e",
+                      "on-surface": "#261913",
+                      "surface-container-low": "#fff1ec",
+                      "on-primary-fixed": "#360f03",
+                      "surface-container-high": "#fce3da",
+                      "outline": "#85736e",
+                      "on-secondary-container": "#666462",
+                      "on-tertiary-fixed-variant": "#524436",
+                      "tertiary-container": "#827261",
+                      "tertiary-fixed": "#f4dfcb",
+                      "inverse-primary": "#feb59d",
+                      "surface-tint": "#88503d",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-highest": "#f6ddd4",
+                      "on-tertiary-container": "#fffbff",
+                      "on-background": "#261913",
+                      "outline-variant": "#d7c2bc",
+                      "primary-fixed": "#ffdbd0",
+                      "background": "#fff8f6",
+                      "inverse-on-surface": "#ffede7",
+                      "on-primary-fixed-variant": "#6c3927",
+                      "surface-variant": "#f6ddd4",
+                      "tertiary": "#68594a",
+                      "secondary-fixed": "#e5e2df",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#feb59d",
+                      "tertiary-fixed-dim": "#d7c3b0"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "margin-mobile": "24px",
+                      "section-gap": "120px",
+                      "gutter": "32px",
+                      "container-max": "1280px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-md": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Custom marble-like subtle texture overlay */
+        .bg-marble-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+        
+        /* Copper inlay effect */
+        .copper-inlay {
+            box-shadow: inset 0 0 0 1px theme('colors.primary');
+        }
+        
+        .copper-glow:hover {
+            box-shadow: 0 0 12px theme('colors.primary-fixed-dim');
+        }
+
+        .soft-ambient-shadow {
+            box-shadow: 0 12px 48px rgba(38, 25, 19, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md bg-marble-texture antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 docked full-width top-0 sticky backdrop-blur-md border-b-[0.5px] border-primary/20 shadow-sm z-50 transition-all duration-300" id="topNav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-md tracking-tighter text-primary flex items-center gap-2 hover:opacity-80 transition-all duration-300 active:scale-95 duration-150" href="#">
+
+<span class="sr-only">PUNTUAL</span>
+</a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center gap-8 font-label-md text-label-md uppercase tracking-widest">
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-80 duration-300" href="#services">Servicios</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-80 duration-300" href="#process">Proceso</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-80 duration-300" href="#about">Nosotros</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-surface-tint copper-glow transition-all duration-300 rounded active:scale-95" href="https://wa.me/525639017564?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener noreferrer">
+                    Cotiza tu página
+                </a>
+<button class="md:hidden text-primary hover:opacity-80 transition-all duration-300 p-2">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[90vh]">
+<div class="md:col-span-7 z-10 space-y-8">
+<div class="mb-8"></div><h1 class="font-display-lg text-display-lg text-on-background">
+                    Tu página web <br>
+<span class="text-primary italic font-serif">lista, rápida y a tu medida.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">En PUNTUAL ayudamos a emprendedores, locales y grandes empresas a destacar en internet. Diseño web desde cero, rediseños y posicionamiento SEO con la mejor atención y precios accesibles.</p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-surface-tint copper-glow transition-all duration-300 rounded-sm" href="https://wa.me/525639017564?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener noreferrer">
+                        Cotiza tu página por WhatsApp
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-5 relative h-full min-h-[400px] rounded-lg overflow-hidden soft-ambient-shadow hidden md:block">
+<img alt="PUNTUAL Digital Studio Banner" class="absolute inset-0 w-full h-full object-contain p-8 bg-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk7AfLPP9yfc-wgnUUA-rb485mp4S8R9Gts2Pbrsd_db4edEDvlgw5IzRULoOd0H3_k_f6kZOy8rwXXBesRHDkiYnSAfSDyEZCjTWOdW4LpiUGQhW_RGsZ34ahaAmkQNjjx48jkhPS-zjsT44c3YOYhCPnmrA8TxJ5pWzAaMWBXsjNLIBw4UwtHBRP4GIQ6PWaOshYErbq-CLuIhm1fzTJeu8gk6jAwNgWTNQak-pJgWHLJQfOooEA4J55vQUoaae_bEaejAHHGt9K">
+<!-- Copper Accent overlay -->
+<div class="absolute inset-0 border border-primary/20 pointer-events-none rounded-lg"></div>
+</div>
+</section>
+<hr class="border-t-[0.5px] border-primary w-full max-w-container-max mx-auto opacity-30">
+<!-- Services Section (Bento Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="services">
+<div class="mb-16 md:w-1/2">
+<span class="inline-block px-3 py-1 font-label-md text-label-md text-primary uppercase tracking-widest copper-inlay rounded-sm mb-4">Especialidad</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Soluciones digitales de precisión.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg soft-ambient-shadow group hover:bg-secondary-container transition-colors duration-500 border border-transparent hover:border-primary/20 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">web</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Creación desde cero</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Diseño moderno y funcional adaptado a las necesidades de tu negocio. Construimos &nbsp;páginas web sólidas.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg soft-ambient-shadow group hover:bg-secondary-container transition-colors duration-500 border border-transparent hover:border-primary/20 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Rediseño Web</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modernizamos sitios antiguos para mejorar las ventas y la velocidad. Elevamos la estética y el rendimiento.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg soft-ambient-shadow group hover:bg-secondary-container transition-colors duration-500 border border-transparent hover:border-primary/20 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Posicionamiento SEO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Optimización para una mejor visibilidad en los motores de búsqueda. Estructura optimizada para liderar resultados.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t-[0.5px] border-primary/20" id="process">
+<div class="mb-16 md:w-1/2 mx-auto text-center">
+<span class="inline-block px-3 py-1 font-label-md text-label-md text-primary uppercase tracking-widest copper-inlay rounded-sm mb-4">Nuestro Proceso</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">¿Cómo trabajamos? Sin sorpresas y a tu gusto.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 relative before:absolute before:inset-0 before:ml-[28px] md:before:ml-0 md:before:mt-[28px] before:-translate-x-px md:before:-translate-y-px md:before:h-[0.5px] before:w-[0.5px] md:before:w-full before:bg-primary/20 before:z-0">
+<!-- Step 1 -->
+<div class="relative pl-16 md:pl-0 md:pt-16 z-10 group">
+<div class="absolute left-0 top-0 md:left-auto md:top-0 w-14 h-14 rounded-full bg-surface-container-lowest border-2 border-primary/20 text-primary flex items-center justify-center font-headline-md group-hover:border-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">1</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">El Boceto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Diseñamos una propuesta visual inicial basada en tu visión. Alineamos la estructura y el estilo antes de construir.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-16 md:pl-0 md:pt-16 z-10 group">
+<div class="absolute left-0 top-0 md:left-auto md:top-0 w-14 h-14 rounded-full bg-surface-container-lowest border-2 border-primary/20 text-primary flex items-center justify-center font-headline-md group-hover:border-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">2</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Detalles y Ajustes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Refinamos cada píxel y funcionalidad. Trabajamos mano a mano para asegurar que todo sea exactamente como lo necesitas.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-16 md:pl-0 md:pt-16 z-10 group">
+<div class="absolute left-0 top-0 md:left-auto md:top-0 w-14 h-14 rounded-full bg-surface-container-lowest border-2 border-primary/20 text-primary flex items-center justify-center font-headline-md group-hover:border-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">3</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Lanzamiento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Optimizamos para velocidad y SEO, conectamos tu dominio y publicamos tu proyecto al mundo. Listo para destacar.</p>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t-[0.5px] border-primary/20" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative h-[500px] rounded-lg overflow-hidden soft-ambient-shadow order-2 md:order-1">
+<img class="absolute inset-0 w-full h-full object-cover" alt="Three professional men in modern business casual attire seen from behind, looking at a large glowing screen displaying clean programming code. High-end, minimalist office interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbXzuBqGPWUHfys6yRolvz15fqUN8WVfbH4yoCMIKsAyTk7Qqcx75xAt2n1nkExh_nCRGlb6cVyRmnlqxlxbV3NWMBqWI3P5gBStLMgSBcBZ5t7RI_-Npcws4uOyh6EhX_RypthNxol5wmm1JCApTgS_QSqpgW5yumN5mOa40q8xuqvAapG6_jAqql6DMAQ-wrRj3QyzpM51Is3K49Aic4ogN-86mZrE8or6lsyoDqti9buyZM-EOOw-__4Hh5GTeB1X_jD5ZiJYzq">
+<div class="absolute inset-0 border border-primary/20 pointer-events-none rounded-lg"></div>
+</div>
+<div class="space-y-6 order-1 md:order-2 md:pl-8">
+<span class="inline-block px-3 py-1 font-label-md text-label-md text-primary uppercase tracking-widest copper-inlay rounded-sm mb-2">Sobre Nosotros</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Arquitectos de tu presencia digital.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">PUNTUAL nace de la visión conjunta de <strong>Javier Iriarte</strong>, <strong>Luis Javier Grisi</strong> y <strong>Patricio Gutiérrez</strong>. Combinamos una mentalidad fresca y dinámica con un enfoque rigurosamente profesional para el diseño web y el SEO.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Creemos que cada negocio merece una plataforma digital que no solo luzca impecable, sino que funcione como una máquina bien engrasada. Nos apasiona construir soluciones tecnológicas precisas, elegantes y efectivas que impulsan el crecimiento de nuestros clientes.
+                </p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contact">
+<div class="bg-surface-container-high rounded-3xl p-12 md:p-24 text-center soft-ambient-shadow relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Lleva tu negocio al siguiente nivel.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Estamos listos para escuchar sobre tu proyecto. Hablemos de tus metas y diseñemos la solución perfecta para alcanzarlas.
+                    </p>
+<div class="pt-4 flex justify-center">
+<a class="inline-flex items-center gap-4 bg-[#25D366] text-white px-10 py-5 font-label-md text-[16px] uppercase tracking-widest hover:bg-[#20bd5a] transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl active:scale-95" href="https://wa.me/525639017564?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+                            Contáctanos por WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t-[0.5px] border-primary mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="space-y-6">
+<img alt="PUNTUAL Logo" class="h-12 w-auto block" src="https://lh3.googleusercontent.com/aida/AP1WRLssf1B6qVg9H_DmvO7eqQ2AQ49gmBcZDD5e6t6wtkWq_NxxH8hFMb7knReIR6BCU1fbcyya2sT00_MMfh85vmG3IdhC7cOsFPD85ZKDmOtKTgTu0F-rvXzp2l3LbsWij5_nbxzS7Mz2ia1IJkOlgDcA2Mb5XnjPYvrHv-DUHth-OOfk6N9qFuillcuNuzfhZ9Bz1Yytg0FRmFgwKqg7lxd1_jSONNyQdqCvkD0AypT9SJQpHtskaWCcFSyb">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">© 2026 PUNTUAL. Construido con precisión arquitectónica.</p>
+</div>
+<div class="flex flex-col md:items-end justify-center space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline focus:ring-2 focus:ring-primary w-fit" href="#services">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline focus:ring-2 focus:ring-primary w-fit" href="#process">Proceso</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline focus:ring-2 focus:ring-primary w-fit" href="#about">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline focus:ring-2 focus:ring-primary w-fit" href="#">Política de Privacidad</a>
+</div>
+</div>
+</footer>
+
+
+
+
+</body></html>
