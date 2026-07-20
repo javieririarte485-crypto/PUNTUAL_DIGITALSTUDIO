@@ -19,3 +19,86 @@
 .soft-ambient-shadow {
     box-shadow: 0 12px 48px rgba(38, 25, 19, 0.05);
 }
+
+/* Smooth anchor scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll-reveal: elements fade + rise into place */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out,
+        background-color 0.5s ease, border-color 0.5s ease,
+        box-shadow 0.5s ease, color 0.3s ease;
+}
+
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile menu open/close animation */
+#mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+#mobile-menu.mobile-menu-open {
+    max-height: 28rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Sticky nav gains depth once the page scrolls */
+#topNav {
+    transition: box-shadow 0.3s ease;
+}
+
+#topNav.scrolled {
+    box-shadow: 0 4px 20px rgba(38, 25, 19, 0.08);
+}
+
+/* Gentle floating motion for the hero banner */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Soft pulsing glow to draw the eye to the WhatsApp CTA */
+@keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+    70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.animate-pulse-ring {
+    animation: pulse-ring 2.5s ease-out infinite;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .animate-float,
+    .animate-pulse-ring {
+        animation: none;
+    }
+    #mobile-menu {
+        transition: none;
+    }
+}
