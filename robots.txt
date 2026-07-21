@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://puntual-digitalstudio-kml6-puntual.vercel.app/sitemap.xml
+Sitemap: https://www.puntualdigitalstudio.com.mx/sitemap.xml
