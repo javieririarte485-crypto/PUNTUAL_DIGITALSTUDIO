@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<script>
+  // Consentimiento por defecto: todo negado hasta que el visitante acepte.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var puntualConsent = null;
+  try { puntualConsent = localStorage.getItem('puntual_cookies'); } catch (e) {}
+  gtag('consent', 'default', {
+    analytics_storage: puntualConsent === 'aceptadas' ? 'granted' : 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W88TRM54');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.puntualdigitalstudio.com.mx/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PUNTUAL Digital Studio">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Diseño web, SEO y redes sociales en CDMX | PUNTUAL Digital Studio">
+<meta property="og:description" content="Páginas web rápidas, posicionamiento en Google, manejo de redes sociales y tarjetas NFC para negocios en México. Cotiza por WhatsApp y te respondemos el mismo día.">
+<meta property="og:url" content="https://www.puntualdigitalstudio.com.mx/">
+<meta property="og:image" content="https://www.puntualdigitalstudio.com.mx/images/hero-banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#261913">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<title>Diseño web, SEO y redes sociales en CDMX | PUNTUAL Digital Studio</title>
+<meta name="description" content="Páginas web rápidas, posicionamiento en Google, manejo de redes sociales y tarjetas NFC para negocios en México. Cotiza por WhatsApp y te respondemos el mismo día.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"PUNTUAL Digital Studio","url":"https://www.puntualdigitalstudio.com.mx/","logo":"https://www.puntualdigitalstudio.com.mx/images/logo.png","telephone":"+52 55 7923 5425","areaServed":"México","address":{"@type":"PostalAddress","streetAddress":"Palma Brava 15, Bosques de las Palmas","addressLocality":"Huixquilucan","addressRegion":"Estado de México","postalCode":"52787","addressCountry":"MX"},"founder":[{"@type":"Person","name":"Javier Iriarte"},{"@type":"Person","name":"Luis Javier Grisi"},{"@type":"Person","name":"Patricio Gutiérrez"}],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Creación de páginas web"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rediseño web"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Posicionamiento SEO y Perfil de Negocio en Google"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Manejo de redes sociales"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tarjetas NFC"}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFF8F6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:#8A4A35}a:hover{color:#261913}
+.btn{transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(38,25,19,.55)}
+.lnk{text-decoration:none;transition:color .2s ease}
+.lnk:hover{color:#C4401A}
+.card{transition:border-color .25s ease, transform .25s ease}
+.card:hover{border-color:#B3745F;transform:translateY(-3px)}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.plus{transition:transform .25s ease}
+input:focus,select:focus,textarea:focus{outline:2px solid #B3745F;outline-offset:1px;border-color:#B3745F}
+@keyframes rv{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes inUp{from{opacity:0;transform:translateY(36px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes screenScroll{0%,22%{transform:translateY(0)}30%,55%{transform:translateY(-33.333%)}63%,88%{transform:translateY(-66.666%)}96%,100%{transform:translateY(0)}}
+@keyframes cursorMove{0%,14%{transform:translate(62%,78%)}20%{transform:translate(18%,58%)}22%{transform:translate(18%,58%) scale(.85)}24%,48%{transform:translate(18%,58%)}56%{transform:translate(70%,40%)}80%{transform:translate(42%,62%)}100%{transform:translate(62%,78%)}}
+@keyframes chat1{0%,6%{opacity:0;transform:translateY(10px)}10%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes chatDots{0%,16%{opacity:0}20%,34%{opacity:1}38%,100%{opacity:0}}
+@keyframes chat2{0%,36%{opacity:0;transform:translateY(10px)}40%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes chat3{0%,58%{opacity:0;transform:translateY(10px)}62%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes dot{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes kenburns{0%{transform:scale(1.02) translate(0,0)}50%{transform:scale(1.12) translate(-2%,-1.5%)}100%{transform:scale(1.02) translate(0,0)}}
+@keyframes sheen{0%,60%{transform:translateX(-120%) skewX(-18deg)}80%,100%{transform:translateX(220%) skewX(-18deg)}}
+@keyframes ring{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.7);opacity:0}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline: view()){
+    .rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 30%}
+    .draw{transform-origin:left center;animation:draw linear both;animation-timeline:view();animation-range:entry 20% cover 45%}
+  }
+  .floaty{animation:floaty 6s ease-in-out infinite}
+  .in1,.in2,.in3,.in4,.in5,.in6{animation:inUp 1s cubic-bezier(.2,.7,.2,1) both}
+  .in2{animation-delay:.12s}.in3{animation-delay:.28s}.in4{animation-delay:.42s}.in5{animation-delay:.56s}.in6{animation-delay:.3s;animation-duration:1.3s}
+  .screen{animation:screenScroll 14s cubic-bezier(.65,0,.35,1) infinite}
+  .cursor{animation:cursorMove 14s ease-in-out infinite}
+  .c1{animation:chat1 9s ease infinite}.cdots{animation:chatDots 9s ease infinite}.c2{animation:chat2 9s ease infinite}.c3{animation:chat3 9s ease infinite}
+  .d1{animation:dot 1s infinite}.d2{animation:dot 1s .2s infinite}.d3{animation:dot 1s .4s infinite}
+  .marquee{animation:marquee 32s linear infinite}
+  .marquee.rev{animation-direction:reverse;animation-duration:40s}
+  .kb{animation:kenburns 18s ease-in-out infinite}
+  .sheen{animation:sheen 6s ease-in-out infinite}
+  .ring{animation:ring 2.2s ease-out infinite}
+  .spin{animation:spinSlow 24s linear infinite}
+}
+@media (max-width:860px){.navlinks{display:none !important}.hide-sm{display:none !important}}
+@media (max-width:560px){.hide-xs{display:none !important}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W88TRM54"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div style="font-family: 'Manrope', 'Helvetica Neue', system-ui, sans-serif; color: #261913; background: #FFF8F6; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased">
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,248,246,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid #EFDCD3">
+  <nav aria-label="Principal" style="max-width: 1240px; margin: 0 auto; padding: 14px clamp(16px, 4vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 24px">
+    <a href="#inicio" aria-label="PUNTUAL Digital Studio, inicio" style="display: flex; align-items: center; gap: 14px; height: 52px">
+      <img src="/images/puntual-logo.webp" alt="" width="52" height="51" style="width: 52px; height: 51px; border-radius: 12px; object-fit: cover; display: block; box-shadow: 0 6px 16px -10px rgba(38,25,19,0.6)">
+      <img src="/images/puntual-wordmark.webp" class="hide-xs" alt="PUNTUAL Digital Studio" width="190" height="23" style="height: 22px; width: auto; display: block">
+    </a>
+    <div class="navlinks" style="display: flex; align-items: center; gap: 28px; font-size: 15px; font-weight: 600">
+      <a class="lnk" href="#servicios" style="color: #261913">Servicios</a>
+      <a class="lnk" href="#proyectos" style="color: #261913">Proyectos</a>
+      <a class="lnk" href="#paquetes" style="color: #261913">Paquetes</a>
+      <a class="lnk" href="#proceso" style="color: #261913">Proceso</a>
+      <a class="lnk" href="#nosotros" style="color: #261913">Nosotros</a>
+      <a class="lnk" href="#preguntas" style="color: #261913">Preguntas</a>
+    </div>
+    <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #C4401A; color: #FFFFFF; font-weight: 700; font-size: 15px; text-decoration: none; white-space: nowrap">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z"></path><path d="M9.3 9c.3-.6.9-.6 1.1-.1l.5 1.2c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.2.5c.5.2.5.8-.1 1.1-.7.4-1.5.6-2.3.2a7 7 0 0 1-3.3-3.3c-.3-.8-.2-1.6.3-2.2z"></path></svg>
+      Cotizar por WhatsApp
+    </a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section aria-labelledby="hero-title" style="max-width: 1240px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 40px) clamp(64px, 8vw, 112px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr)); gap: clamp(40px, 5vw, 72px); align-items: center">
+  <div style="display: flex; flex-direction: column; gap: 28px">
+    <p class="in1" style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">
+      <span aria-hidden="true" style="width: 28px; height: 2px; background: #B3745F; display: block"></span>
+      Estudio digital · Ciudad de México
+    </p>
+    <h1 id="hero-title" class="in2" style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-weight: 700; font-size: clamp(2.7rem, 5.4vw, 5.1rem); line-height: 0.98; letter-spacing: -0.035em; text-wrap: balance">
+      Te ayudamos a conseguir <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: #A85A3F">más clientes</span> en internet.
+    </h1>
+    <p class="in3" style="margin: 0; max-width: 34rem; font-size: clamp(1.05rem, 1.4vw, 1.2rem); color: #4A3329; text-wrap: pretty">
+      Páginas web rápidas, presencia en Google y redes sociales para negocios locales. Nos escribes por WhatsApp y te respondemos el mismo día.
+    </p>
+    <div class="in4" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+      <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 28px; border-radius: 999px; background: #C4401A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none">
+        <span class="sheen" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 40%; background: rgba(255,255,255,0.22); display: block"></span>
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z"></path><path d="M9.3 9c.3-.6.9-.6 1.1-.1l.5 1.2c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.2.5c.5.2.5.8-.1 1.1-.7.4-1.5.6-2.3.2a7 7 0 0 1-3.3-3.3c-.3-.8-.2-1.6.3-2.2z"></path></svg>
+        Escríbenos por WhatsApp
+      </a>
+      <a class="btn" href="#servicios" style="display: inline-flex; align-items: center; gap: 10px; min-height: 58px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #261913; color: #261913; font-weight: 700; font-size: 17px; text-decoration: none">
+        Ver servicios
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+      </a>
+    </div>
+    <ul class="in5" style="margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px 26px; font-size: 14.5px; font-weight: 600; color: #4A3329">
+      <li style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Respuesta el mismo día</li>
+      <li style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Trato directo con quien diseña</li>
+      <li style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Lista en 2 a 3 semanas</li>
+    </ul>
+  </div>
+
+  <!-- Mockup: laptop + phone -->
+  <div class="in6" role="img" aria-label="Ejemplo animado de página web hecha por PUNTUAL, vista en laptop y en celular" style="position: relative; padding: 0 0 56px 0; min-height: 420px">
+    <div aria-hidden="true" style="position: absolute; inset: 8% -4% 2% 10%; background: #F6E3DA; border-radius: 40px"></div>
+    <div style="position: relative; width: 90%">
+      <div style="background: #261913; border-radius: 16px 16px 0 0; padding: 12px 12px 14px">
+        <div style="aspect-ratio: 16 / 10; background: #FFFDFC; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid #F1E4DE">
+            <div style="display: flex; align-items: center; gap: 8px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 13px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #B3745F; display: block"></span>Tu negocio</div>
+            <div style="display: flex; gap: 12px; align-items: center"><span style="width: 34px; height: 5px; border-radius: 3px; background: #E7D5CC; display: block"></span><span style="width: 34px; height: 5px; border-radius: 3px; background: #E7D5CC; display: block"></span><span style="width: 34px; height: 5px; border-radius: 3px; background: #E7D5CC; display: block"></span><span style="padding: 4px 10px; border-radius: 99px; background: #C4401A; color: #FFFFFF; font-size: 9px; font-weight: 700">Agenda</span></div>
+          </div>
+          <div style="flex: 1; position: relative; overflow: hidden">
+            <div class="screen" style="position: absolute; left: 0; right: 0; top: 0; height: 300%; display: grid; grid-template-rows: repeat(3, minmax(0, 1fr))">
+              <!-- Pantalla 1: portada -->
+              <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; padding: 18px">
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px">
+                  <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(14px, 1.7vw, 24px); line-height: 1.02; letter-spacing: -0.02em">Lo que haces, explicado en un vistazo.</div>
+                  <span style="width: 90%; height: 6px; border-radius: 3px; background: #EADBD3; display: block"></span>
+                  <span style="width: 70%; height: 6px; border-radius: 3px; background: #EADBD3; display: block"></span>
+                  <div style="display: flex; gap: 6px; margin-top: 4px"><span style="padding: 6px 12px; border-radius: 99px; background: #261913; color: #FFFFFF; font-size: 9px; font-weight: 700">Escríbenos</span><span style="padding: 6px 12px; border-radius: 99px; border: 1px solid #261913; font-size: 9px; font-weight: 700">Ver más</span></div>
+                </div>
+                <div style="border-radius: 10px; overflow: hidden; position: relative; background: #EBCFC3">
+                  <img class="kb" src="/images/puntual-logo.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+                </div>
+              </div>
+              <!-- Pantalla 2: servicios -->
+              <div style="display: flex; flex-direction: column; gap: 12px; padding: 18px">
+                <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(12px, 1.3vw, 18px); letter-spacing: -0.02em">Nuestros servicios</div>
+                <div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+                  <div style="border-radius: 10px; background: #F6ECE7; padding: 10px; display: flex; flex-direction: column; gap: 6px"><span style="width: 18px; height: 18px; border-radius: 6px; background: #B3745F; display: block"></span><span style="width: 80%; height: 5px; border-radius: 3px; background: #DCC6BB; display: block"></span><span style="width: 60%; height: 5px; border-radius: 3px; background: #E7D5CC; display: block"></span></div>
+                  <div style="border-radius: 10px; background: #261913; padding: 10px; display: flex; flex-direction: column; gap: 6px"><span style="width: 18px; height: 18px; border-radius: 6px; background: #F0BCA6; display: block"></span><span style="width: 80%; height: 5px; border-radius: 3px; background: #5A443A; display: block"></span><span style="width: 60%; height: 5px; border-radius: 3px; background: #4A372E; display: block"></span></div>
+                  <div style="border-radius: 10px; background: #F6ECE7; padding: 10px; display: flex; flex-direction: column; gap: 6px"><span style="width: 18px; height: 18px; border-radius: 6px; background: #B3745F; display: block"></span><span style="width: 80%; height: 5px; border-radius: 3px; background: #DCC6BB; display: block"></span><span style="width: 60%; height: 5px; border-radius: 3px; background: #E7D5CC; display: block"></span></div>
+                </div>
+                <div style="display: flex; gap: 6px; align-items: center; font-size: 9px; font-weight: 700; color: #8A4A35"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="#C4401A"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"></path></svg>Clientes felices en Google</div>
+              </div>
+              <!-- Pantalla 3: contacto -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 18px">
+                <div style="border-radius: 10px; background: repeating-linear-gradient(135deg, #EBCFC3 0 10px, #F3DED5 10px 20px); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="#C4401A" stroke="#FFFFFF" stroke-width="1.5"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"></path></svg></div>
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 8px">
+                  <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(12px, 1.4vw, 19px); line-height: 1.05; letter-spacing: -0.02em">Agenda hoy por WhatsApp</div>
+                  <span style="height: 18px; border-radius: 5px; border: 1px solid #E7D5CC; display: block"></span>
+                  <span style="height: 18px; border-radius: 5px; border: 1px solid #E7D5CC; display: block"></span>
+                  <span style="padding: 6px 12px; border-radius: 99px; background: #C4401A; color: #FFFFFF; font-size: 9px; font-weight: 700; text-align: center">Enviar mensaje</span>
+                </div>
+              </div>
+            </div>
+            <div class="cursor" aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; transform: translate(62%, 78%)"><svg width="16" height="20" viewBox="0 0 16 20" style="display: block; filter: drop-shadow(0 2px 3px rgba(38,25,19,0.35))"><path d="M1 1v15l4-3.6 2.8 6 2.4-1.1-2.8-5.9 5.6-.3z" fill="#261913" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round"></path></svg></div>
+          </div>
+        </div>
+      </div>
+      <div style="height: 14px; margin: 0 -5%; background: #3B2A22; border-radius: 0 0 14px 14px; display: flex; justify-content: center"><span style="width: 18%; height: 5px; background: #261913; border-radius: 0 0 6px 6px; display: block"></span></div>
+    </div>
+
+    <div class="floaty" style="position: absolute; right: 0; bottom: 0; width: clamp(130px, 28%, 176px); background: #261913; border-radius: 30px; padding: 8px; box-shadow: 0 30px 60px -28px rgba(38,25,19,0.6)">
+      <div style="aspect-ratio: 9 / 19; background: #FFFDFC; border-radius: 23px; overflow: hidden; display: flex; flex-direction: column; padding: 18px 12px 12px; gap: 9px">
+        <div style="display: flex; align-items: center; gap: 5px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 10px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #B3745F; display: block"></span>Tu negocio</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px; line-height: 1.02; letter-spacing: -0.02em">Lo que haces, en un vistazo.</div>
+        <span style="height: 46px; border-radius: 8px; background: repeating-linear-gradient(135deg, #EBCFC3 0 8px, #F3DED5 8px 16px); display: block"></span>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 6px">
+          <div class="c1" style="align-self: flex-end; max-width: 88%; background: #F6E3DA; border-radius: 12px 12px 3px 12px; padding: 6px 9px; font-size: 8.5px; line-height: 1.3; font-weight: 600">Hola, quiero agendar una cita</div>
+          <div class="cdots" style="align-self: flex-start; display: flex; gap: 3px; background: #261913; border-radius: 12px 12px 12px 3px; padding: 7px 9px"><span class="d1" style="width: 4px; height: 4px; border-radius: 50%; background: #FFF8F6; display: block"></span><span class="d2" style="width: 4px; height: 4px; border-radius: 50%; background: #FFF8F6; display: block"></span><span class="d3" style="width: 4px; height: 4px; border-radius: 50%; background: #FFF8F6; display: block"></span></div>
+          <div class="c2" style="align-self: flex-start; max-width: 88%; background: #261913; color: #FFF8F6; border-radius: 12px 12px 12px 3px; padding: 6px 9px; font-size: 8.5px; line-height: 1.3; font-weight: 600">¡Claro! ¿Qué día te acomoda?</div>
+          <div class="c3" style="align-self: flex-end; max-width: 88%; background: #F6E3DA; border-radius: 12px 12px 3px 12px; padding: 6px 9px; font-size: 8.5px; line-height: 1.3; font-weight: 600">Mañana a las 5, gracias</div>
+        </div>
+        <div style="align-self: stretch; text-align: center; padding: 7px; border-radius: 99px; background: #C4401A; color: #FFFFFF; font-size: 9px; font-weight: 700">Enviar por WhatsApp</div>
+      </div>
+    </div>
+
+    <div class="hide-sm" style="position: absolute; left: -2%; bottom: 18px; background: #FFFFFF; border: 1px solid #EFDCD3; border-radius: 14px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 18px 40px -24px rgba(38,25,19,0.45)">
+      <span style="width: 36px; height: 36px; border-radius: 10px; background: #FBEDE6; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"></path><circle cx="12" cy="11" r="2.2"></circle></svg></span>
+      <span style="display: flex; flex-direction: column; line-height: 1.25"><strong style="font-size: 13.5px">Visible en Google y Maps</strong><span style="font-size: 12px; color: #6B4F43">Perfil de Negocio optimizado</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- MARCA EN MOVIMIENTO -->
+<section aria-labelledby="estudio-title" style="background: #261913; color: #FFF8F6; overflow: hidden">
+  <div aria-hidden="true" style="padding: 34px 0; border-bottom: 1px solid #3B2A22; overflow: hidden">
+    <div class="marquee" style="display: flex; width: max-content; align-items: center; gap: 40px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1; letter-spacing: -0.03em; white-space: nowrap">
+      <span>Páginas web</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">SEO local</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span>Google Maps</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">Redes sociales</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span>Tarjetas NFC</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">WhatsApp</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span>Páginas web</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">SEO local</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span>Google Maps</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">Redes sociales</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span>Tarjetas NFC</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">WhatsApp</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#F0BCA6"><path d="M12 0c.8 7 4.9 11.2 12 12-7.1.8-11.2 5-12 12-.8-7-4.9-11.2-12-12 7.1-.8 11.2-5 12-12z"></path></svg>
+    </div>
+  </div>
+
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(16px, 4vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px 80px; align-items: center">
+    <div class="rv" style="position: relative; max-width: 520px; width: 100%; justify-self: center">
+      <div style="aspect-ratio: 512 / 503; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(0,0,0,0.8)">
+        <img class="kb" src="/images/puntual-logo.webp" alt="Logotipo de PUNTUAL Digital Studio" width="512" height="503" style="width: 100%; height: 100%; object-fit: cover; display: block">
+      </div>
+      <svg class="spin" aria-hidden="true" viewBox="0 0 200 200" style="position: absolute; right: -36px; bottom: -36px; width: 150px; height: 150px">
+        <circle cx="100" cy="100" r="98" fill="#C4401A"></circle>
+        <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"></path></defs>
+        <text font-family="Manrope, sans-serif" font-size="15.5" font-weight="700" letter-spacing="4.2" fill="#FFF8F6"><textPath href="#circ">PUNTUAL · DIGITAL STUDIO · CDMX ·</textPath></text>
+        <path d="M100 82c.6 9 5.4 14 18 18-12.6 4-17.4 9-18 18-.6-9-5.4-14-18-18 12.6-4 17.4-9 18-18z" fill="#FFF8F6"></path>
+      </svg>
+    </div>
+    <div class="rv" style="display: flex; flex-direction: column; gap: 22px">
+      <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E7B39F">El estudio</p>
+      <h2 id="estudio-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.3rem, 4.4vw, 4rem); line-height: 1; letter-spacing: -0.035em; text-wrap: balance">Construido con <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">precisión arquitectónica</span>.</h2>
+      <p style="margin: 0; color: #E9D8D0; font-size: 18px; max-width: 32rem">Cada página la pensamos como un plano: estructura clara, detalles cuidados y una sola meta, que tu cliente te escriba.</p>
+      <a class="lnk" href="#servicios" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; font-weight: 700; color: #FFF8F6">Conoce lo que hacemos <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
+    </div>
+  </div>
+
+  <div aria-hidden="true" style="padding: 22px 0; border-top: 1px solid #3B2A22; overflow: hidden">
+    <div class="marquee rev" style="display: flex; width: max-content; gap: 48px; font-size: 14px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #B3917F; white-space: nowrap">
+      <span>Respuesta el mismo día</span><span>·</span><span>Atención directa</span><span>·</span><span>Lista en 2 a 3 semanas</span><span>·</span><span>Hecho en CDMX</span><span>·</span><span>Respuesta el mismo día</span><span>·</span><span>Atención directa</span><span>·</span><span>Lista en 2 a 3 semanas</span><span>·</span><span>Hecho en CDMX</span><span>·</span>
+      <span>Respuesta el mismo día</span><span>·</span><span>Atención directa</span><span>·</span><span>Lista en 2 a 3 semanas</span><span>·</span><span>Hecho en CDMX</span><span>·</span><span>Respuesta el mismo día</span><span>·</span><span>Atención directa</span><span>·</span><span>Lista en 2 a 3 semanas</span><span>·</span><span>Hecho en CDMX</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" aria-labelledby="servicios-title" style="background: #FFFFFF; border-top: 1px solid #F1E4DE; border-bottom: 1px solid #F1E4DE">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 56px">
+    <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 46rem">
+        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">01 — Servicios</p>
+        <h2 id="servicios-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">Todo lo que tu negocio necesita para que lo <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">encuentren</span>.</h2>
+      </div>
+      <p style="margin: 0; max-width: 24rem; color: #4A3329">Elige un servicio o combínalos. Cada botón abre WhatsApp con tu mensaje ya escrito.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 20px">
+      <article class="card rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid #EBDAD2; border-radius: 22px; background: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de página web nueva" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"></rect><path d="M3 9h18M12 12v5M9.5 14.5h5"></path></svg>
+          <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 14px; color: #A07A6B">01</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">Páginas web desde cero</h3>
+        <p style="margin: 0; color: #4A3329; flex: 1">Una página rápida y a tu medida que explica lo que haces y convierte visitas en mensajes.</p>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20desde%20cero%20para%20mi%20negocio." target="_blank" rel="noopener" style="margin-top: 8px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913; text-decoration: none">Cotizar este servicio <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </article>
+
+      <article class="card rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid #EBDAD2; border-radius: 22px; background: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de rediseño web" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"></rect><path d="M3 9h18"></path><path d="M15.4 15.2a3.4 3.4 0 1 1-.4-3.6"></path><path d="M15.5 10.6v1.8h-1.8"></path></svg>
+          <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 14px; color: #A07A6B">02</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">Rediseño web</h3>
+        <p style="margin: 0; color: #4A3329; flex: 1">Renovamos tu sitio para que cargue rápido, se vea impecable en celular y vuelva a vender.</p>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20ya%20tengo%20p%C3%A1gina%20web%20y%20quiero%20cotizar%20un%20redise%C3%B1o." target="_blank" rel="noopener" style="margin-top: 8px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913; text-decoration: none">Cotizar este servicio <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </article>
+
+      <article class="card rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid #EBDAD2; border-radius: 22px; background: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de posicionamiento en Google" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 19s-5-4.4-5-8.4a5 5 0 0 1 10 0"></path><circle cx="10" cy="10.5" r="1.8"></circle><circle cx="16.5" cy="16" r="3"></circle><path d="M18.7 18.2L21 20.5"></path></svg>
+          <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 14px; color: #A07A6B">03</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">SEO y Perfil de Negocio en Google</h3>
+        <p style="margin: 0; color: #4A3329; flex: 1">Que te encuentren cuando buscan lo que vendes, en Google y en Google Maps.</p>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20aparecer%20en%20Google.%20Me%20interesa%20cotizar%20SEO%20y%20mi%20Perfil%20de%20Negocio." target="_blank" rel="noopener" style="margin-top: 8px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913; text-decoration: none">Cotizar este servicio <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </article>
+
+      <article class="card rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid #EBDAD2; border-radius: 22px; background: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de manejo de redes sociales" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"></rect><path d="M3 10h18M8 3v4M16 3v4"></path><path d="M12 18.3l-2.3-2.2a1.45 1.45 0 0 1 2.3-1.8 1.45 1.45 0 0 1 2.3 1.8z"></path></svg>
+          <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 14px; color: #A07A6B">04</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">Manejo de redes sociales</h3>
+        <p style="margin: 0; color: #4A3329; flex: 1">Planeamos, diseñamos y publicamos tu contenido cada mes, y te mandamos el reporte de resultados.</p>
+        <a class="lnk" href="/redes-sociales.html" style="font-size: 14.5px; font-weight: 600; color: #8A4A35">Ver cómo funciona</a>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20el%20manejo%20de%20redes%20sociales%20de%20mi%20negocio." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913; text-decoration: none">Cotizar este servicio <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </article>
+
+      <article class="card rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border: 1px solid #EBDAD2; border-radius: 22px; background: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de tarjeta NFC" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"></rect><path d="M6 14.5h5"></path><path d="M18 9.2a4.2 4.2 0 0 1 0 5.6M20.6 7a7.6 7.6 0 0 1 0 10"></path></svg>
+          <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 14px; color: #A07A6B">05</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">Tarjetas NFC</h3>
+        <p style="margin: 0; color: #4A3329; flex: 1">Tus clientes la acercan al celular y abren tus reseñas de Google, tu WhatsApp o tus redes. Ideal para mostrador y mesa.</p>
+        <a class="lnk" href="/tarjetas-nfc.html" style="font-size: 14.5px; font-weight: 600; color: #8A4A35">Ver cómo funciona</a>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20me%20interesan%20las%20tarjetas%20NFC%20para%20mi%20negocio." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913; text-decoration: none">Cotizar este servicio <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </article>
+
+      <aside class="rv" style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 22px; background: #261913; color: #FFF8F6">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start">
+          <svg role="img" aria-label="Icono de automatización de WhatsApp" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E7B39F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9.5L4 20z"></path><path d="M12.6 7.6l-2.4 3.9h3l-1.6 2.9"></path></svg>
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #E7B39F">También</span>
+        </div>
+        <h3 style="margin: 8px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; letter-spacing: -0.02em">Automatización de WhatsApp</h3>
+        <p style="margin: 0; color: #E9D8D0; flex: 1">Mensajes de bienvenida, respuestas rápidas y catálogo para que ningún cliente se quede sin respuesta.</p>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20automatizaci%C3%B3n%20de%20WhatsApp." target="_blank" rel="noopener" style="margin-top: 8px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #FFF8F6; text-decoration: none">Preguntar por esto <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" aria-labelledby="proyectos-title">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 56px">
+    <div class="rv" style="display: flex; flex-direction: column; gap: 16px; max-width: 46rem">
+      <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">02 — Proyectos</p>
+      <h2 id="proyectos-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">Negocios reales que ya <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">confían</span> en nosotros.</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(520px, 100%), 1fr)); gap: 40px 32px">
+      <article class="rv" style="display: flex; flex-direction: column; gap: 18px">
+        <div class="card" style="border-radius: 20px; overflow: hidden; border: 1px solid #EBDAD2; background: #FFFFFF; box-shadow: 0 30px 60px -40px rgba(38,25,19,0.45)">
+          <div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px; border-bottom: 1px solid #F1E4DE; background: #FBF5F2"><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="margin-left: 10px; font-size: 11.5px; font-weight: 600; color: #8A6E62">Diente de León · Odontopediatría</span></div>
+          <div style="aspect-ratio: 16 / 9; overflow: hidden"><img class="kb" src="/images/proyecto-diente-de-leon.webp" alt="Página de inicio de Diente de León Odontopediatra, diseñada por PUNTUAL" width="1600" height="894" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block"></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em">Diente de León Odontopediatra</h3>
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #8A4A35">Odontopediatría · Apizaco, Tlax.</span>
+        </div>
+        <p style="margin: 0; color: #4A3329"><strong style="color: #261913">Qué hicimos:</strong> una página cálida y cercana para papás, con la mascota del consultorio, botón para agendar cita y contacto directo por WhatsApp.</p>
+      </article>
+
+      <article class="rv" style="display: flex; flex-direction: column; gap: 18px">
+        <div class="card" style="border-radius: 20px; overflow: hidden; border: 1px solid #EBDAD2; background: #FFFFFF; box-shadow: 0 30px 60px -40px rgba(38,25,19,0.45)">
+          <div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px; border-bottom: 1px solid #F1E4DE; background: #FBF5F2"><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #E7CFC4; display: block"></span><span style="margin-left: 10px; font-size: 11.5px; font-weight: 600; color: #8A6E62">gruposindicalagd.mx</span></div>
+          <div style="aspect-ratio: 16 / 9; overflow: hidden"><img class="kb" src="/images/proyecto-grupo-agd.webp" alt="Página de inicio de Grupo AGD, diseñada por PUNTUAL" width="1600" height="808" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block"></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em">Grupo AGD</h3>
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #8A4A35">Organización sindical</span>
+        </div>
+        <p style="margin: 0; color: #4A3329"><strong style="color: #261913">Qué hicimos:</strong> un sitio institucional con sus servicios, avisos y botones directos para afiliarse o escribir por WhatsApp.</p>
+      </article>
+
+      <article class="rv" style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; border-radius: 24px; background: #261913; color: #FFF8F6; padding: clamp(28px, 4vw, 56px)">
+        <div style="display: flex; flex-direction: column; gap: 14px; max-width: 40rem">
+          <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E7B39F">Tu proyecto</p>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(1.9rem, 3.4vw, 3.2rem); line-height: 1.02; letter-spacing: -0.03em">¿El siguiente <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">es el tuyo?</span></h3>
+          <p style="margin: 0; color: #E9D8D0">Cuéntanos de tu negocio y en el mismo día te mandamos una propuesta clara.</p>
+        </div>
+        <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 58px; padding: 0 30px; border-radius: 999px; background: #C4401A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none">Quiero mi página</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PAQUETES -->
+<section id="paquetes" aria-labelledby="paquetes-title" style="background: #F8ECE6">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 56px">
+    <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 46rem">
+        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">03 — Paquetes</p>
+        <h2 id="paquetes-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">Paquetes claros, <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">sin letras chiquitas</span>.</h2>
+      </div>
+      <p style="margin: 0; max-width: 24rem; color: #4A3329">Precios en pesos mexicanos, con dominio incluido. Cada proyecto se cotiza según tu negocio y te mandamos la cotización por WhatsApp. Redes sociales a partir del segundo mes: desde $3,900 al mes.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr)); gap: 20px; align-items: stretch">
+      <article class="rv" style="display: flex; flex-direction: column; gap: 22px; padding: 36px 32px; border-radius: 24px; background: #FFFFFF; border: 1px solid #EBDAD2">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em">Página web</h3>
+        <p style="margin: 0; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600; color: #6B4F43">Desde</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 46px; line-height: 1; letter-spacing: -0.03em">$8,000</span></p>
+        <p style="margin: 0; color: #4A3329">Para tener presencia profesional en internet y recibir mensajes.</p>
+        <ul style="margin: 0; padding: 22px 0 0; border-top: 1px solid #F1E4DE; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15.5px; flex: 1">
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Diseño a la medida de tu negocio</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Se ve perfecta en celular</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Botón directo a tu WhatsApp</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Optimizada para cargar rápido</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Dominio incluido y publicación</li>
+        </ul>
+        <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20me%20interesa%20el%20paquete%20P%C3%A1gina%20web." target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 999px; border: 1.5px solid #261913; color: #261913; font-weight: 700; text-decoration: none">Cotizar este paquete</a>
+      </article>
+
+      <article class="rv" style="position: relative; display: flex; flex-direction: column; gap: 22px; padding: 36px 32px; border-radius: 24px; background: #261913; color: #FFF8F6">
+        <span style="position: absolute; top: 20px; right: 20px; padding: 6px 12px; border-radius: 999px; background: #F0BCA6; color: #261913; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase">Más pedido</span>
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em; padding-right: 112px">Página web + Google</h3>
+        <p style="margin: 0; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600; color: #E7B39F">Desde</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 46px; line-height: 1; letter-spacing: -0.03em">$9,900</span></p>
+        <p style="margin: 0; color: #E9D8D0">Para que te encuentren quienes ya están buscando lo que vendes.</p>
+        <ul style="margin: 0; padding: 22px 0 0; border-top: 1px solid #4A372E; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15.5px; flex: 1">
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0BCA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Todo lo del paquete Página web</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0BCA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Alta y optimización de tu Perfil de Negocio en Google</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0BCA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Posicionamiento SEO local</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0BCA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Apareces en Google Maps con fotos, horario y ubicación</li>
+        </ul>
+        <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20me%20interesa%20el%20paquete%20P%C3%A1gina%20web%20%2B%20Google." target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; border-radius: 999px; background: #C4401A; color: #FFFFFF; font-weight: 700; text-decoration: none">Cotizar este paquete</a>
+      </article>
+
+      <article class="rv" style="display: flex; flex-direction: column; gap: 22px; padding: 36px 32px; border-radius: 24px; background: #FFFFFF; border: 1px solid #EBDAD2">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em">Paquete completo</h3>
+        <p style="margin: 0; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600; color: #6B4F43">Desde</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 46px; line-height: 1; letter-spacing: -0.03em">$14,900</span></p>
+        <p style="margin: 0; color: #4A3329">Para el negocio que quiere hacerse cargo de todo su mundo digital.</p>
+        <ul style="margin: 0; padding: 22px 0 0; border-top: 1px solid #F1E4DE; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15.5px; flex: 1">
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Todo lo de Página web + Google</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Primer mes de redes sociales incluido</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Tarjeta NFC para reseñas de Google</li>
+          <li style="display: flex; gap: 10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Reporte mensual de resultados</li>
+        </ul>
+        <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20me%20interesa%20el%20Paquete%20completo%20%28web%2C%20Google%2C%20redes%20y%20NFC%29." target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 999px; border: 1.5px solid #261913; color: #261913; font-weight: 700; text-decoration: none">Cotizar este paquete</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" aria-labelledby="proceso-title" style="background: #261913; color: #FFF8F6">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 64px">
+    <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 48rem">
+        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E7B39F">04 — Proceso</p>
+        <h2 id="proceso-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">De la idea a tu página en línea en <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #F0BCA6">2 a 3 semanas</span>.</h2>
+      </div>
+      <p style="margin: 0; max-width: 22rem; color: #E9D8D0">Tres pasos, sin sorpresas. En cada uno ves avances y das tu visto bueno.</p>
+    </div>
+
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 40px 0">
+      <li class="rv" style="display: flex; flex-direction: column; gap: 18px; padding-right: 32px">
+        <div style="display: flex; align-items: center"><span style="width: 56px; height: 56px; flex: none; border-radius: 50%; background: #F0BCA6; color: #261913; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">1</span><span class="draw" aria-hidden="true" style="flex: 1; height: 2px; background: #F0BCA6; display: block"></span></div>
+        <span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; border: 1px solid #6B5248; font-size: 13px; font-weight: 700; color: #F0BCA6">Semana 1</span>
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">El Boceto</h3>
+        <p style="margin: 0; color: #E9D8D0">Te presentamos una propuesta visual para alinear la estructura y el estilo antes de construir.</p>
+      </li>
+      <li class="rv" style="display: flex; flex-direction: column; gap: 18px; padding-right: 32px">
+        <div style="display: flex; align-items: center"><span style="width: 56px; height: 56px; flex: none; border-radius: 50%; background: #F0BCA6; color: #261913; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">2</span><span class="draw" aria-hidden="true" style="flex: 1; height: 2px; background: #F0BCA6; display: block"></span></div>
+        <span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; border: 1px solid #6B5248; font-size: 13px; font-weight: 700; color: #F0BCA6">Semana 2</span>
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Detalles y Ajustes</h3>
+        <p style="margin: 0; color: #E9D8D0">Afinamos diseño, textos y funciones contigo, hasta que la página se sienta tuya.</p>
+      </li>
+      <li class="rv" style="display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; align-items: center"><span style="width: 56px; height: 56px; flex: none; border-radius: 50%; background: #C4401A; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 9.5-9.5a2.1 2.1 0 0 0-3-3L6 15z"></path><path d="M14 7l3 3"></path></svg></span></div>
+        <span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; border: 1px solid #6B5248; font-size: 13px; font-weight: 700; color: #F0BCA6">Semana 2 a 3</span>
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Lanzamiento</h3>
+        <p style="margin: 0; color: #E9D8D0">Optimizamos velocidad y SEO, conectamos tu dominio y publicamos. Tu negocio, en línea.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" aria-labelledby="nosotros-title">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 64px">
+    <div class="rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 24px 64px; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">05 — Nosotros</p>
+        <h2 id="nosotros-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">Somos tres, y vas a hablar <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">directo</span> con nosotros.</h2>
+      </div>
+      <p style="margin: 0; color: #4A3329; font-size: 18px">PUNTUAL lo fundamos Javier, Luis Javier y Patricio. Tenemos una mentalidad fresca y dinámica, pero trabajamos con rigor profesional: sin intermediarios, tú hablas con quien diseña tu página.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
+      <figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 18px; padding-top: 26px; border-top: 2px solid #261913">
+        <span aria-hidden="true" style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 56px; line-height: 1; color: #A85A3F">01</span>
+        <figcaption style="display: flex; flex-direction: column; gap: 2px"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.05; letter-spacing: -0.025em">Javier Iriarte</strong><span style="color: #6B4F43; font-weight: 600">Cofundador</span></figcaption>
+      </figure>
+      <figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 18px; padding-top: 26px; border-top: 2px solid #261913">
+        <span aria-hidden="true" style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 56px; line-height: 1; color: #A85A3F">02</span>
+        <figcaption style="display: flex; flex-direction: column; gap: 2px"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.05; letter-spacing: -0.025em">Luis Javier Grisi</strong><span style="color: #6B4F43; font-weight: 600">Cofundador</span></figcaption>
+      </figure>
+      <figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 18px; padding-top: 26px; border-top: 2px solid #261913">
+        <span aria-hidden="true" style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 56px; line-height: 1; color: #A85A3F">03</span>
+        <figcaption style="display: flex; flex-direction: column; gap: 2px"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.05; letter-spacing: -0.025em">Patricio Gutiérrez</strong><span style="color: #6B4F43; font-weight: 600">Cofundador</span></figcaption>
+      </figure>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 28px; padding-top: 56px; border-top: 1px solid #EBDAD2">
+      <h3 class="rv" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">¿Por qué elegirnos?</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 32px">
+        <div class="rv" style="display: flex; flex-direction: column; gap: 10px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+          <h4 style="margin: 4px 0 0; font-size: 18px; font-weight: 700">Respuesta rápida</h4>
+          <p style="margin: 0; color: #4A3329; font-size: 15.5px">Te contestamos por WhatsApp el mismo día.</p>
+        </div>
+        <div class="rv" style="display: flex; flex-direction: column; gap: 10px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.5v-8h8l9 9-8 8z"></path><circle cx="8" cy="9" r="1.4"></circle></svg>
+          <h4 style="margin: 4px 0 0; font-size: 18px; font-weight: 700">Precios accesibles</h4>
+          <p style="margin: 0; color: #4A3329; font-size: 15.5px">Cotizaciones claras, ajustadas al tamaño de tu proyecto.</p>
+        </div>
+        <div class="rv" style="display: flex; flex-direction: column; gap: 10px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><path d="M3.5 19a5.5 5.5 0 0 1 11 0"></path><path d="M16 11.5l2 2 3.5-3.5"></path></svg>
+          <h4 style="margin: 4px 0 0; font-size: 18px; font-weight: 700">Atención directa</h4>
+          <p style="margin: 0; color: #4A3329; font-size: 15.5px">Sin intermediarios: trabajas con quien diseña tu página.</p>
+        </div>
+        <div class="rv" style="display: flex; flex-direction: column; gap: 10px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4l16 16z"></path><path d="M8 16h3.5M8 12.5h1.5"></path></svg>
+          <h4 style="margin: 4px 0 0; font-size: 18px; font-weight: 700">Rigor profesional</h4>
+          <p style="margin: 0; color: #4A3329; font-size: 15.5px">Mentalidad fresca con estándares serios de diseño y SEO.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS -->
+<section id="preguntas" aria-labelledby="preguntas-title" style="background: #FFFFFF; border-top: 1px solid #F1E4DE">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 48px 80px; align-items: start">
+    <div class="rv" style="display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">06 — Preguntas frecuentes</p>
+      <h2 id="preguntas-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.5rem); line-height: 1.02; letter-spacing: -0.03em">Lo que todos nos <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">preguntan</span>.</h2>
+      <p style="margin: 8px 0 0; color: #4A3329">¿Tienes otra duda? Pregúntanos sin compromiso.</p>
+      <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; color: #261913">Escribir por WhatsApp <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+    </div>
+    <div style="display: flex; flex-direction: column; border-top: 1px solid #EBDAD2">
+      <details open style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Cuánto cuesta una página web?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">Depende de lo que necesite tu negocio. Nuestros paquetes empiezan desde $8,000 y te mandamos una cotización clara por WhatsApp el mismo día, sin compromiso.</p>
+      </details>
+      <details style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Cuánto tardan en tenerla lista?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">Normalmente entre 2 y 3 semanas. Depende del tamaño del proyecto y de qué tan rápido nos compartas tus textos, fotos y comentarios.</p>
+      </details>
+      <details style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Incluye dominio y hosting?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">Sí. El dominio va incluido en el precio de tu página y el hosting queda cubierto mientras tengas el plan de mantenimiento. Nosotros conectamos y publicamos todo por ti.</p>
+      </details>
+      <details style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Qué pasa después de entregar?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">No te dejamos solo. Con nuestro plan de mantenimiento de $1,200 MXN por trimestre tu hosting queda cubierto, seguimos al pendiente de tu página y hacemos los cambios que necesites.</p>
+      </details>
+      <details style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Puedo cambiar el contenido después?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">Claro. Nos mandas por WhatsApp lo que quieres cambiar y nosotros lo actualizamos por ti. No tienes que tocar nada técnico.</p>
+      </details>
+      <details style="border-bottom: 1px solid #EBDAD2">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 76px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">¿Cómo es el pago?<span class="plus" aria-hidden="true" style="flex: none; font-size: 28px; font-weight: 400; color: #A85A3F">+</span></summary>
+        <p style="margin: 0 0 24px; color: #4A3329; max-width: 40rem">En tres pagos: un anticipo para arrancar, otro cuando apruebas el boceto y el último al lanzar tu página. Así pagas conforme ves avances.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" aria-labelledby="contacto-title" style="background: #F8ECE6">
+  <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 48px 80px; align-items: start">
+    <div class="rv" style="display: flex; flex-direction: column; gap: 22px">
+      <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A4A35">07 — Contacto</p>
+      <h2 id="contacto-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.3rem, 4.4vw, 4rem); line-height: 1; letter-spacing: -0.035em; text-wrap: balance">Cuéntanos de tu negocio. <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: #A85A3F">Te respondemos hoy.</span></h2>
+      <p style="margin: 0; color: #4A3329; max-width: 30rem">Llena estos datos y se abrirá WhatsApp con tu mensaje listo para enviar. Así de fácil.</p>
+      <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 12px">
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; font-weight: 700; font-size: 18px; color: #261913"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z"></path><path d="M9.3 9c.3-.6.9-.6 1.1-.1l.5 1.2c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.2.5c.5.2.5.8-.1 1.1-.7.4-1.5.6-2.3.2a7 7 0 0 1-3.3-3.3c-.3-.8-.2-1.6.3-2.2z"></path></svg>WhatsApp: 56 3901 7564</a>
+        <a class="lnk" href="tel:+525579235425" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; font-weight: 700; font-size: 18px; color: #261913"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A85A3F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>Teléfono: 55 7923 5425</a>
+      </div>
+    </div>
+
+    <form id="form-contacto" class="rv" aria-label="Formulario de contacto por WhatsApp" style="display: flex; flex-direction: column; gap: 18px; padding: clamp(24px, 4vw, 44px); border-radius: 26px; background: #FFFFFF; border: 1px solid #EBDAD2">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 18px">
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700">Tu nombre
+          <input type="text" name="nombre" autocomplete="name" placeholder="Ej. Ana López" style="min-height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #DCC6BB; background: #FFF8F6; font: inherit; font-size: 16px; font-weight: 500; color: #261913">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700">Tu negocio
+          <input type="text" name="negocio" autocomplete="organization" placeholder="Ej. Cafetería La Esquina" style="min-height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #DCC6BB; background: #FFF8F6; font: inherit; font-size: 16px; font-weight: 500; color: #261913">
+        </label>
+      </div>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700">Servicio de interés
+        <select name="servicio" style="min-height: 52px; padding: 0 14px; border-radius: 12px; border: 1px solid #DCC6BB; background: #FFF8F6; font: inherit; font-size: 16px; font-weight: 500; color: #261913">
+          <option value="Página web desde cero">Página web desde cero</option>
+          <option value="Rediseño web">Rediseño web</option>
+          <option value="SEO y Perfil de Negocio en Google">SEO y Perfil de Negocio en Google</option>
+          <option value="Manejo de redes sociales">Manejo de redes sociales</option>
+          <option value="Tarjetas NFC">Tarjetas NFC</option>
+          <option value="Automatización de WhatsApp">Automatización de WhatsApp</option>
+          <option value="Paquete completo">Paquete completo</option>
+          <option value="Aún no sé, quiero asesoría">Aún no sé, quiero asesoría</option>
+        </select>
+      </label>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700">Mensaje
+        <textarea name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas o qué te gustaría lograr" style="padding: 14px 16px; border-radius: 12px; border: 1px solid #DCC6BB; background: #FFF8F6; font: inherit; font-size: 16px; font-weight: 500; color: #261913; resize: vertical"></textarea>
+      </label>
+      <a id="form-enviar" class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 58px; border-radius: 999px; background: #C4401A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z"></path><path d="M9.3 9c.3-.6.9-.6 1.1-.1l.5 1.2c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.2.5c.5.2.5.8-.1 1.1-.7.4-1.5.6-2.3.2a7 7 0 0 1-3.3-3.3c-.3-.8-.2-1.6.3-2.2z"></path></svg>
+        Enviar por WhatsApp
+      </a>
+      <p style="margin: 0; font-size: 13px; color: #6B4F43; text-align: center">Al enviar aceptas nuestra <a href="/privacidad.html">Política de privacidad</a>.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background: #261913; color: #E9D8D0">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 72px clamp(16px, 4vw, 40px) 40px; display: flex; flex-direction: column; gap: 56px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 18px; grid-column: span 1">
+        <img src="/images/puntual-logo.webp" alt="PUNTUAL Digital Studio" width="120" height="118" style="width: 120px; height: 118px; border-radius: 18px; object-fit: cover; align-self: flex-start">
+        <p style="margin: 0; font-size: 15px; max-width: 18rem">Diseño web, SEO, redes sociales y tarjetas NFC para negocios en México.</p>
+      </div>
+      <nav aria-label="Servicios" style="display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+        <h2 style="margin: 0 0 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F0BCA6">Servicios</h2>
+        <a class="lnk" href="#servicios" style="color: #E9D8D0">Páginas web desde cero</a>
+        <a class="lnk" href="#servicios" style="color: #E9D8D0">Rediseño web</a>
+        <a class="lnk" href="#servicios" style="color: #E9D8D0">SEO y Google</a>
+        <a class="lnk" href="/redes-sociales.html" style="color: #E9D8D0">Manejo de redes sociales</a>
+        <a class="lnk" href="/tarjetas-nfc.html" style="color: #E9D8D0">Tarjetas NFC</a>
+      </nav>
+      <nav aria-label="Estudio" style="display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+        <h2 style="margin: 0 0 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F0BCA6">Estudio</h2>
+        <a class="lnk" href="#proyectos" style="color: #E9D8D0">Proyectos</a>
+        <a class="lnk" href="#paquetes" style="color: #E9D8D0">Paquetes</a>
+        <a class="lnk" href="#proceso" style="color: #E9D8D0">Proceso</a>
+        <a class="lnk" href="#nosotros" style="color: #E9D8D0">Nosotros</a>
+        <a class="lnk" href="#preguntas" style="color: #E9D8D0">Preguntas frecuentes</a>
+      </nav>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+        <h2 style="margin: 0 0 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F0BCA6">Contacto</h2>
+        <a class="lnk" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" style="color: #E9D8D0">WhatsApp 56 3901 7564</a>
+        <a class="lnk" href="tel:+525579235425" style="color: #E9D8D0">Tel. 55 7923 5425</a>
+        <span>Ciudad de México</span>
+        <div style="display: none; gap: 10px; margin-top: 8px">
+          <a class="lnk" href="#" aria-label="Instagram de PUNTUAL [agregar enlace]" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #4A372E; display: flex; align-items: center; justify-content: center; color: #E9D8D0"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"></circle></svg></a>
+          <a class="lnk" href="#" aria-label="Facebook de PUNTUAL [agregar enlace]" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #4A372E; display: flex; align-items: center; justify-content: center; color: #E9D8D0"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M14.5 21v-7.5h2.5l.5-3h-3V8.8c0-.9.3-1.6 1.6-1.6H17.6V4.6a20 20 0 0 0-2.3-.1c-2.4 0-3.8 1.4-3.8 4v2H9v3h2.5V21"></path></svg></a>
+          <a class="lnk" href="#" aria-label="TikTok de PUNTUAL [agregar enlace]" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #4A372E; display: flex; align-items: center; justify-content: center; color: #E9D8D0"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5v11.2a3.3 3.3 0 1 1-3.3-3.3"></path><path d="M14 3.5c.4 2.4 2 4 4.5 4.3"></path></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding-top: 28px; border-top: 1px solid #4A372E; font-size: 14px; color: #CBB5AA">
+      <span>© 2026 PUNTUAL Digital Studio. Construido con precisión arquitectónica.</span>
+      <a class="lnk" href="/privacidad.html" style="color: #CBB5AA">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+
+  <a class="btn" href="https://wa.me/525639017564?text=Hola%20PUNTUAL%2C%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" style="position: fixed; right: clamp(16px, 2.5vw, 32px); bottom: clamp(16px, 2.5vw, 32px); z-index: 50; width: 64px; height: 64px; border-radius: 50%; background: #C4401A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 36px -14px rgba(38,25,19,0.7)">
+    <span class="ring" aria-hidden="true" style="position: absolute; inset: 0; border-radius: 50%; border: 2px solid #C4401A; display: block"></span>
+    <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z"></path><path d="M9.3 9c.3-.6.9-.6 1.1-.1l.5 1.2c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.2.5c.5.2.5.8-.1 1.1-.7.4-1.5.6-2.3.2a7 7 0 0 1-3.3-3.3c-.3-.8-.2-1.6.3-2.2z"></path></svg>
+  </a>
+
+
+</div>
+<div id="aviso-cookies" role="region" aria-label="Aviso de privacidad"
+  style="position:fixed;left:16px;bottom:16px;z-index:49;width:min(430px,calc(100% - 108px));display:none;flex-direction:column;gap:12px;padding:18px 20px;border-radius:18px;background:#261913;color:#F3E4DC;box-shadow:0 20px 44px -18px rgba(38,25,19,.7);font:14px/1.5 Manrope,system-ui,sans-serif">
+  <p style="margin:0">Usamos cookies para que la página funcione y, si nos das permiso, Google Analytics para saber cómo mejorarla. Consulta nuestro <a href="/privacidad.html" style="color:#F0BCA6;font-weight:700">Aviso de privacidad</a>.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px">
+    <button type="button" id="cookies-aceptar" style="min-height:44px;padding:0 22px;border:0;border-radius:999px;background:#FFF8F6;color:#261913;font:inherit;font-weight:700;cursor:pointer">Aceptar</button>
+    <button type="button" id="cookies-rechazar" style="min-height:44px;padding:0 18px;border:1px solid #6B5248;border-radius:999px;background:transparent;color:#F3E4DC;font:inherit;font-weight:600;cursor:pointer">Solo necesarias</button>
+  </div>
+</div>
+<script>
+  (function () {
+    var aviso = document.getElementById('aviso-cookies');
+    var guardado = null;
+    try { guardado = localStorage.getItem('puntual_cookies'); } catch (e) {}
+    if (!guardado) aviso.style.display = 'flex';
+
+    function elegir(valor) {
+      try { localStorage.setItem('puntual_cookies', valor); } catch (e) {}
+      if (valor === 'aceptadas') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+        dataLayer.push({ event: 'cookies_aceptadas' });
+      }
+      aviso.style.display = 'none';
+    }
+    document.getElementById('cookies-aceptar').addEventListener('click', function () { elegir('aceptadas'); });
+    document.getElementById('cookies-rechazar').addEventListener('click', function () { elegir('rechazadas'); });
+  })();
+</script>
+<script>
+  (function () {
+    var form = document.getElementById('form-contacto');
+    if (!form) return;
+    var btn = document.getElementById('form-enviar');
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var v = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
+      var lines = ['Hola PUNTUAL, me interesa: ' + v('servicio') + '.'];
+      if (v('nombre')) lines.push('Soy ' + v('nombre') + (v('negocio') ? ', de ' + v('negocio') : '') + '.');
+      else if (v('negocio')) lines.push('Mi negocio: ' + v('negocio') + '.');
+      if (v('mensaje')) lines.push(v('mensaje'));
+      var url = 'https://wa.me/525639017564?text=' + encodeURIComponent(lines.join('\n'));
+      var w = window.open(url, '_blank', 'noopener');
+      if (!w) window.location.href = url;
+    });
+    form.addEventListener('submit', function (e) { e.preventDefault(); btn.click(); });
+  })();
+</script>
+</body>
+</html>
